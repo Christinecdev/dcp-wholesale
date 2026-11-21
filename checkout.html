@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Complete your wholesale order with The Daily Pour Café. Provide your business details and fulfillment preferences.">
+
+    <title>Wholesale Checkout | The Daily Pour Café</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<!-- HEADER -->
+
+<header>
+    <div class="container header-content">
+
+        <a href="index.html" class="logo">
+            The Daily Pour Café
+            <span class="logo-subtitle">WHOLESALE</span>
+        </a>
+
+        <nav aria-label="Main navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="how-it-works.html">How It Works</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <li><a href="checkout.html" aria-current="page">Checkout</a></li>
+            </ul>
+        </nav>
+
+    </div>
+</header>
+
+
+<main class="container page-content">
+
+    <!-- CHECKOUT INTRODUCTION -->
+
+    <section class="checkout-intro">
+
+        <p class="eyebrow">Almost There · DPC Wholesale</p>
+
+        <h1>Complete Your Wholesale Order</h1>
+
+        <p class="page-intro">
+            You're one step closer to bringing The Daily Pour Café
+            to your business. Review your order, provide your
+            business information, and let us know how you'd
+            like to receive your products.
+        </p>
+
+        <div class="checkout-progress">
+
+            <div class="progress-step completed">
+                <span>1</span>
+                <p>Shopping Cart</p>
+            </div>
+
+            <div class="progress-line"></div>
+
+            <div class="progress-step active">
+                <span>2</span>
+                <p>Checkout</p>
+            </div>
+
+            <div class="progress-line"></div>
+
+            <div class="progress-step">
+                <span>3</span>
+                <p>Confirmation</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- CHECKOUT LAYOUT -->
+
+    <div class="wholesale-checkout-layout">
+
+
+        <!-- ORDER DETAILS -->
+
+        <section class="checkout-order-panel">
+
+            <div class="checkout-section-heading">
+
+                <div>
+                    <p class="eyebrow">Your Selection</p>
+                    <h2>Order Summary</h2>
+                    <p>Review the products in your wholesale order.</p>
+                </div>
+
+                <a href="cart.html" class="edit-cart-link">
+                    Edit Cart
+                </a>
+
+            </div>
+
+
+            <!-- PRODUCT ONE -->
+
+            <article class="checkout-product">
+
+                <img
+                    src="cofe.jpeg"
+                    alt="Signature Coffee">
+
+                <div class="checkout-product-info">
+
+                    <p class="cart-product-category">
+                        Coffee Collection
+                    </p>
+
+                    <h3>Signature Coffee</h3>
+
+                    <p class="checkout-unit-price">
+                        $2.50 <span>/ unit</span>
+                    </p>
+
+                    <p class="checkout-quantity">
+                        Quantity: <strong>12</strong>
+                    </p>
+
+                </div>
+
+                <div class="checkout-product-total">
+                    <span>Subtotal</span>
+                    <strong>$30.00</strong>
+                </div>
+
+            </article>
+
+
+            <!-- PRODUCT TWO -->
+
+            <article class="checkout-product">
+
+                <img
+                    src="pastries.jpg"
+                    alt="Fresh Pastries">
+
+                <div class="checkout-product-info">
+
+                    <p class="cart-product-category">
+                        Bakery Collection
+                    </p>
+
+                    <h3>Fresh Pastries</h3>
+
+                    <p class="checkout-unit-price">
+                        $2.00 <span>/ unit</span>
+                    </p>
+
+                    <p class="checkout-quantity">
+                        Quantity: <strong>12</strong>
+                    </p>
+
+                </div>
+
+                <div class="checkout-product-total">
+                    <span>Subtotal</span>
+                    <strong>$24.00</strong>
+                </div>
+
+            </article>
+
+
+            <!-- PRICE SUMMARY -->
+
+            <div class="checkout-price-summary">
+
+                <div class="summary-row">
+                    <span>Total Products</span>
+                    <strong>2</strong>
+                </div>
+
+                <div class="summary-row">
+                    <span>Total Units</span>
+                    <strong>24</strong>
+                </div>
+
+                <div class="summary-row">
+                    <span>Merchandise Subtotal</span>
+                    <strong>$54.00</strong>
+                </div>
+
+                <div class="summary-row">
+                    <span>Delivery</span>
+                    <strong>Confirmed separately</strong>
+                </div>
+
+                <div class="summary-divider"></div>
+
+                <div class="checkout-grand-total">
+                    <span>Estimated Order Total</span>
+                    <strong>$54.00</strong>
+                </div>
+
+                <p class="summary-note">
+                    Delivery fees, applicable taxes, product
+                    availability, and final pricing will be
+                    confirmed by our team.
+                </p>
+
+            </div>
+
+
+            <!-- ORDER NOTICE -->
+
+            <div class="checkout-notice">
+
+                <span class="notice-icon">☕</span>
+
+                <div>
+                    <h3>A Note About Your Wholesale Order</h3>
+
+                    <p>
+                        This checkout represents a wholesale
+                        order request. Your order is not final
+                        until The Daily Pour Café reviews and
+                        confirms the details with you.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- BUSINESS INFORMATION FORM -->
+
+        <section class="checkout-form-panel">
+
+            <div class="checkout-section-heading">
+
+                <p class="eyebrow">Customer Details</p>
+
+                <h2>Business Information</h2>
+
+                <p>
+                    Tell us a little about your business so
+                    we can prepare your order.
+                </p>
+
+            </div>
+
+
+            <form
+                action="#"
+                method="post"
+                class="wholesale-checkout-form">
+
+
+                <!-- BUSINESS DETAILS -->
+
+                <fieldset>
+
+                    <legend>Business Details</legend>
+
+                    <label for="business-name">
+                        Business Name <span>*</span>
+                    </label>
+
+                    <input
+                        type="text"
+                        id="business-name"
+                        name="business-name"
+                        autocomplete="organization"
+                        placeholder="e.g. The Corner Café"
+                        required
+                    >
+
+                    <label for="business-type">
+                        Type of Business <span>*</span>
+                    </label>
+
+                    <select
+                        id="business-type"
+                        name="business-type"
+                        required>
+
+                        <option value="">Select business type</option>
+                        <option value="cafe">Café / Coffee Shop</option>
+                        <option value="restaurant">Restaurant</option>
+                        <option value="retail">Retail Business</option>
+                        <option value="office">Office / Organization</option>
+                        <option value="catering">Catering Business</option>
+                        <option value="event">Event / Special Occasion</option>
+                        <option value="other">Other</option>
+
+                    </select>
+
+                    <label for="business-address">
+                        Business Address
+                    </label>
+
+                    <textarea
+                        id="business-address"
+                        name="business-address"
+                        rows="3"
+                        autocomplete="street-address"
+                        placeholder="Street address, city, state, and ZIP code"
+                    ></textarea>
+
+                </fieldset>
+
+
+                <!-- CONTACT DETAILS -->
+
+                <fieldset>
+
+                    <legend>Primary Contact</legend>
+
+                    <label for="customer-name">
+                        Full Name <span>*</span>
+                    </label>
+
+                    <input
+                        type="text"
+                        id="customer-name"
+                        name="customer-name"
+                        autocomplete="name"
+                        placeholder="Your full name"
+                        required
+                    >
+
+                    <label for="email">
+                        Business Email Address <span>*</span>
+                    </label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        autocomplete="email"
+                        placeholder="you@yourbusiness.com"
+                        required
+                    >
+
+                    <label for="phone">
+                        Contact Phone Number <span>*</span>
+                    </label>
+
+                    <input
+                        type="tel"
+                        id="phone"
+                        name="phone"
+                        autocomplete="tel"
+                        placeholder="(000) 000-0000"
+                        required
+                    >
+
+                </fieldset>
+
+
+                <!-- FULFILLMENT DETAILS -->
+
+                <fieldset>
+
+                    <legend>Fulfillment Preferences</legend>
+
+                    <label for="order-method">
+                        Preferred Fulfillment Method <span>*</span>
+                    </label>
+
+                    <select
+                        id="order-method"
+                        name="order-method"
+                        required>
+
+                        <option value="">Choose fulfillment method</option>
+                        <option value="pickup">Café Pickup</option>
+                        <option value="delivery">Delivery Request</option>
+
+                    </select>
+
+                    <label for="delivery-address">
+                        Pickup or Delivery Address
+                    </label>
+
+                    <textarea
+                        id="delivery-address"
+                        name="delivery-address"
+                        rows="3"
+                        placeholder="Enter the preferred pickup or delivery location"
+                    ></textarea>
+
+                    <label for="preferred-date">
+                        Preferred Order Date
+                    </label>
+
+                    <input
+                        type="date"
+                        id="preferred-date"
+                        name="preferred-date"
+                    >
+
+                    <label for="preferred-time">
+                        Preferred Time</label>
+
+                    <select
+                        id="preferred-time"
+                        name="preferred-time">
+
+                        <option value="">Select a preferred time</option>
+                        <option value="morning">Morning (8 AM – 11 AM)</option>
+                        <option value="midday">Midday (11 AM – 2 PM)</option>
+                        <option value="afternoon">Afternoon (2 PM – 5 PM)</option>
+                        <option value="flexible">Flexible</option>
+
+                    </select>
+
+                    <p class="help-text">
+                        Your requested date and time are subject
+                        to availability and confirmation.
+                    </p>
+
+                </fieldset>
+
+
+                <!-- ADDITIONAL INFORMATION -->
+
+                <fieldset>
+
+                    <legend>Additional Information</legend>
+
+                    <label for="order-notes">
+                        Special Requests or Order Notes
+                    </label>
+
+                    <textarea
+                        id="order-notes"
+                        name="order-notes"
+                        rows="4"
+                        placeholder="Let us know about special requests, product preferences, packaging, or other instructions."
+                    ></textarea>
+
+                </fieldset>
+
+
+                <!-- SUBMIT -->
+
+                <div class="checkout-submit">
+
+                    <button
+                        type="submit"
+                        class="checkout-submit-button">
+
+                        Submit Wholesale Order Request →
+
+                    </button>
+
+                    <p class="secure-note">
+                        By submitting this form, you are requesting
+                        a wholesale order review from The Daily Pour Café.
+                    </p>
+
+                    <p class="help-text">
+                        Our team will review your request and
+                        contact you to confirm product availability,
+                        pricing, and fulfillment arrangements.
+                    </p>
+
+                </div>
+
+            </form>
+
+        </section>
+
+    </div>
+
+
+    <!-- ADDITIONAL ASSISTANCE -->
+
+    <section class="about checkout-assistance">
+
+        <p class="eyebrow">We're Here to Help</p>
+
+        <h2>Have Questions About Your Order?</h2>
+
+        <p>
+            Whether you're ordering for a café, restaurant,
+            office, or special event, we're happy to help you
+            explore your wholesale options.
+        </p>
+
+        <a href="how-it-works.html" class="btn">
+            Learn How Wholesale Works
+        </a>
+
+    </section>
+
+</main>
+
+
+
+<!-- FOOTER -->
+
+<footer>
+
+    <div class="container footer-content">
+
+        <div class="footer-brand">
+
+            <h2>The Daily Pour Café</h2>
+
+            <p>
+                Coffee, sweet treats, and wholesale ordering
+                made simple.
+            </p>
+
+        </div>
+
+
+        <div class="footer-links">
+
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="how-it-works.html">How It Works</a>
+
+        </div>
+
+
+        <div class="footer-links">
+
+            <a href="index.html#products">Our Products</a>
+            <a href="cart.html">Shopping Cart</a>
+            <a href="checkout.html">Checkout</a>
+
+        </div>
+
+
+        <p class="copyright">
+            &copy; 2026 The Daily Pour Café. All rights reserved.
+        </p>
+
+    </div>
+
+</footer>
+
+</body>
+</html>

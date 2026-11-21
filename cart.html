@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Wholesale Cart | The Daily Pour Café</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<!-- ========================================
+     HEADER
+======================================== -->
+
+<header>
+    <div class="container header-content">
+
+        <a href="index.html" class="logo">
+            The Daily Pour Café
+            <span class="logo-subtitle">WHOLESALE</span>
+        </a>
+
+        <nav aria-label="Main navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="how-it-works.html">How It Works</a></li>
+                <li><a href="cart.html" aria-current="page">Cart</a></li>
+                <li><a href="checkout.html">Checkout</a></li>
+            </ul>
+        </nav>
+
+    </div>
+</header>
+
+
+<!-- ========================================
+     MAIN CONTENT
+======================================== -->
+
+<main class="container page-content">
+
+    <!-- Page Introduction -->
+
+    <section class="cart-intro">
+
+        <p class="eyebrow">Your Wholesale Order</p>
+
+        <h1>Your Shopping Cart</h1>
+
+        <p class="page-intro">
+            Review your selected products, adjust quantities,
+            and prepare your wholesale order.
+        </p>
+
+    </section>
+
+
+    <!-- Cart Layout -->
+
+    <div class="wholesale-cart-layout">
+
+
+        <!-- ========================================
+             CART PRODUCTS
+        ======================================== -->
+
+        <section class="cart-panel" aria-label="Cart products">
+
+            <div class="cart-heading">
+
+                <div>
+                    <h2>Order Items</h2>
+
+                    <p class="cart-subheading">
+                        <span id="cart-item-count">2</span> products
+                        in your cart
+                    </p>
+                </div>
+
+                <div class="cart-icon" aria-label="Shopping cart">
+
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="28"
+                        height="28"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        viewBox="0 0 24 24"
+                        aria-hidden="true">
+
+                        <circle cx="9" cy="21" r="1"></circle>
+                        <circle cx="20" cy="21" r="1"></circle>
+                        <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+
+                    </svg>
+
+                    <span class="item-count" id="cart-icon-count">2</span>
+
+                </div>
+
+            </div>
+
+
+            <!-- PRODUCT 1 -->
+
+            <article class="cart-item" data-product-id="coffee">
+
+                <img
+                    src="cofe.jpeg"
+                    alt="Signature Coffee">
+
+                <div class="cart-item-info">
+
+                    <p class="cart-product-category">
+                        Coffee Collection
+                    </p>
+
+                    <h3>Signature Coffee</h3>
+
+                    <p class="cart-unit-price">
+                        $2.50 <span>/ unit</span>
+                    </p>
+
+                    <p class="cart-line-subtotal">
+                        Subtotal:
+                        <strong data-line-subtotal>$30.00</strong>
+                    </p>
+
+                </div>
+
+
+                <div class="cart-actions">
+
+                    <label class="quantity-label">
+                        Quantity
+                    </label>
+
+                    <div class="quantity-control">
+
+                        <button
+                            type="button"
+                            class="quantity-btn"
+                            data-cart-decrease
+                            aria-label="Decrease Signature Coffee quantity">
+                            −
+                        </button>
+
+                        <span
+                            class="quantity-value"
+                            data-cart-quantity
+                            aria-live="polite">12</span>
+
+                        <button
+                            type="button"
+                            class="quantity-btn"
+                            data-cart-increase
+                            aria-label="Increase Signature Coffee quantity">
+                            +
+                        </button>
+
+                    </div>
+
+                    <button
+                        type="button"
+                        class="remove-btn"
+                        data-cart-remove>
+                        Remove
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <!-- PRODUCT 2 -->
+
+            <article class="cart-item" data-product-id="pastries">
+
+                <img
+                    src="pastries.jpg"
+                    alt="Fresh Pastries">
+
+                <div class="cart-item-info">
+
+                    <p class="cart-product-category">
+                        Bakery Collection
+                    </p>
+
+                    <h3>Fresh Pastries</h3>
+
+                    <p class="cart-unit-price">
+                        $2.00 <span>/ unit</span>
+                    </p>
+
+                    <p class="cart-line-subtotal">
+                        Subtotal:
+                        <strong data-line-subtotal>$24.00</strong>
+                    </p>
+
+                </div>
+
+
+                <div class="cart-actions">
+
+                    <label class="quantity-label">
+                        Quantity
+                    </label>
+
+                    <div class="quantity-control">
+
+                        <button
+                            type="button"
+                            class="quantity-btn"
+                            data-cart-decrease
+                            aria-label="Decrease Fresh Pastries quantity">
+                            −
+                        </button>
+
+                        <span
+                            class="quantity-value"
+                            data-cart-quantity
+                            aria-live="polite">12</span>
+
+                        <button
+                            type="button"
+                            class="quantity-btn"
+                            data-cart-increase
+                            aria-label="Increase Fresh Pastries quantity">
+                            +
+                        </button>
+
+                    </div>
+
+                    <button
+                        type="button"
+                        class="remove-btn"
+                        data-cart-remove>
+                        Remove
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <!-- EMPTY CART STATE -->
+
+            <div class="empty-cart" id="empty-cart" hidden>
+
+                <div class="empty-cart-icon">☕</div>
+
+                <h3>Your cart is waiting for something delicious.</h3>
+
+                <p>
+                    Explore our wholesale collection and add
+                    products to start preparing your order.
+                </p>
+
+                <a href="index.html#products" class="btn">
+                    Browse Products
+                </a>
+
+            </div>
+
+
+            <!-- CONTINUE SHOPPING -->
+
+            <a
+                href="index.html#products"
+                class="continue-shopping"
+                id="continue-shopping">
+
+                ← Continue Shopping
+
+            </a>
+
+        </section>
+
+
+
+        <!-- ========================================
+             ORDER SUMMARY
+        ======================================== -->
+
+        <aside class="cart-summary">
+
+            <h2>Order Summary</h2>
+
+            <p class="summary-description">
+                Your wholesale order at a glance.
+            </p>
+
+
+            <div class="summary-row">
+
+                <span>Products</span>
+
+                <strong id="summary-products">2</strong>
+
+            </div>
+
+
+            <div class="summary-row">
+
+                <span>Total Units</span>
+
+                <strong id="summary-units">24</strong>
+
+            </div>
+
+
+            <div class="summary-divider"></div>
+
+
+            <div class="summary-row">
+
+                <span>Merchandise Subtotal</span>
+
+                <strong id="summary-subtotal">$54.00</strong>
+
+            </div>
+
+
+            <div class="summary-row delivery-row">
+
+                <span>Delivery</span>
+
+                <strong>Confirmed separately</strong>
+
+            </div>
+
+
+            <div class="summary-divider"></div>
+
+
+            <div class="summary-total">
+
+                <span>Order Subtotal</span>
+
+                <strong id="summary-total">$54.00</strong>
+
+            </div>
+
+            <p class="summary-note">
+                Delivery arrangements and any applicable
+                charges will be confirmed separately.
+            </p>
+
+
+            <!-- CHECKOUT -->
+
+            <a
+                href="checkout.html"
+                class="checkout-button"
+                id="checkout-button">
+
+                Proceed to Checkout →
+
+            </a>
+
+
+            <div class="summary-footer">
+
+                <span>THE DAILY POUR CAFÉ</span>
+
+                <span>Wholesale Collection</span>
+
+            </div>
+
+        </aside>
+
+    </div>
+
+
+
+    <!-- ========================================
+         WHOLESALE ASSISTANCE
+    ======================================== -->
+
+    <section class="about cart-assistance">
+        <p class="eyebrow">Here to Help</p>
+        <h2>Ordering for Your Business?</h2>
+
+        <p>
+            Whether you're ordering for a café, restaurant,
+            retail business, office, or special event,
+            The Daily Pour Café makes it easy to explore
+            our wholesale product collection.
+        </p>
+        <a href="how-it-works.html" class="btn">
+            Learn How It Works
+        </a>
+    </section>
+</main>
+
+
+
+<!-- ========================================
+     FOOTER
+======================================== -->
+
+<footer>
+    <div class="container footer-content">
+        <div class="footer-brand">
+            <h2>The Daily Pour Cafe</h2>
+            <p>
+                Coffee, sweet treats, and wholesale ordering
+                made simple.
+            </p>
+        </div>
+
+        <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="how-it-works.html">How It Works</a>
+        </div>
+
+        <div class="footer-links">
+
+            <a href="index.html#products">Our Products</a>
+            <a href="cart.html">Shopping Cart</a>
+            <a href="checkout.html">Checkout</a>
+        </div>
+
+        <p class="copyright">
+            &copy; 2026 The Daily Pour Cafe. All rights reserved.
+        </p>
+    </div>
+</footer>
+
+</body>
+</html>
