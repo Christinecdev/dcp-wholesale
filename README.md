@@ -2,7 +2,7 @@
 
 ## Live Demo
 
-http://127.0.0.1:3000/about.html?vscode-livepreview=true
+https://christinecdev.github.io/dcp-wholesale/
 
 A fictional café wholesale website built with HTML5 and CSS3 as part of my front-end web development journey through FreeCodeCamp.
 
