@@ -811,6 +811,15 @@ footer p {
     font-size: 0.8rem;
 }
 
+.footer-subtitle {
+    display: block;
+    margin-top: 3px;
+    color: #E8DDD1;
+    font-family: "Segoe UI", sans-serif;
+    font-size: 0.65rem;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+}
 /* ========================================
    14. HOMEPAGE ADDITIONS
 ======================================== */
